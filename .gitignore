@@ -1,0 +1,9 @@
+# Ignore settings for apatana project I use for dev
+.project
+.pydevproject
+
+# Don't ship main db file as I might upload passwords by accident
+database.sql
+
+#
+*.pyc
