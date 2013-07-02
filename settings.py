@@ -87,7 +87,7 @@ USE_SOUTH = True
 # In the format (('Full Name', 'email@example.com'),
 #                ('Full Name', 'anotheremail@example.com'))
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    ('Sjoerd Kerkstra', 'w.s.kerkstra@gmail.com'),
 )
 MANAGERS = ADMINS
 
@@ -148,6 +148,15 @@ STATICFILES_FINDERS = (
 # The numeric mode to set newly-uploaded files to. The value should be
 # a mode you'd pass directly to os.chmod.
 FILE_UPLOAD_PERMISSIONS = 0644
+
+########################################
+# Site customization, Sjoerd July 2013 #
+########################################
+SITE_TITLE = "Thinkingmrseaves"
+SITE_TAGLINE = "discussion, education, discussion"
+BLOG_SLUG = "" # don't know what this does, but urls.py told me to do it
+
+
 
 
 #############
@@ -223,6 +232,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "tme", #thinkingmrseaves main app
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
