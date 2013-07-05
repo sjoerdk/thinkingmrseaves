@@ -156,7 +156,9 @@ SITE_TITLE = "Thinkingmrseaves"
 SITE_TAGLINE = "discussion, education, discussion"
 BLOG_SLUG = "" # don't know what this does, but urls.py told me to do it
 
-
+# In non-debug mode, allow only calls from these domains. Added this to stop
+# Django from bitching about it
+ALLOWED_HOSTS = ["localhost",".thinkingmrseaves.com"] 
 
 
 #############
