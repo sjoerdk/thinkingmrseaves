@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-responsive.css" %}">
+<link rel="stylesheet" href="{% static "css/thinkingmrseaves.css" %}">
 <style>
 	@font-face{
 			font-family: sanslike;
@@ -56,7 +57,7 @@
 </head>
 <body id="{% block body_id %}body{% endblock %}">
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top debugremove">
 <div class="navbar-inner">
 <div class="container">
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -74,8 +75,6 @@
 </div>
 </div>
 
-<div class="container">
-
 {% nevercache %}
 {% for message in messages %}
 <div class="alert alert-{{ message.tags }}" data-alert="alert">
@@ -83,6 +82,9 @@
 </div>
 {% endfor %}
 {% endnevercache %}
+
+<div class="container debugremove">
+
 
 
 <h1>{% block title %}{% endblock %}</h1>

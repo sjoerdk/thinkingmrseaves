@@ -1,0 +1,42 @@
+/**********************
+ *      Main site     *
+ **********************/
+.panel {background:none; padding:10px 20px; margin-bottom:20px;
+        line-height:170%; border:0px solid #eee; border-radius:0px;}
+        
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+        
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #fdfdfd;
+  border: 1px solid #dcdcdc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/**********************
+ *  Debug dev options *
+ **********************/
+.debugremove {display:none;}
