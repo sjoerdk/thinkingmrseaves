@@ -31,12 +31,18 @@ pre {
           border-radius: 0px;
 }
 
-a {
-    color: #ff0000;
-    text-decoration: none;
+a {color: #ff0000; text-decoration: none;
 }
 
+.topmenu li{float:left;list-style-type: none;}
+.topmenu li li{clear: both; float: none; margin-right: 30px; 
+			   padding: 6px 0; width: 120px;}
+
+.pagetitle{font-size: 54px;}
+
+footer{padding:0px;}
 /**********************
  *  Debug dev options *
  **********************/
 .debugremove {display:none;}
+.span2.left {width:10px;}

@@ -152,7 +152,7 @@ FILE_UPLOAD_PERMISSIONS = 0644
 ########################################
 # Site customization, Sjoerd July 2013 #
 ########################################
-SITE_TITLE = "Thinkingmrseaves"
+SITE_TITLE = "Thinking Mrs. Eaves"
 SITE_TAGLINE = "discussion, education, discussion"
 BLOG_SLUG = "" # don't know what this does, but urls.py told me to do it
 
