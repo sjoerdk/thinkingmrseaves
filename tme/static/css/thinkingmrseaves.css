@@ -35,12 +35,23 @@ a {color: #ff0000; text-decoration: none;
 }
 
 .topmenu li{float:left;list-style-type: none;}
-.topmenu li li{clear: both; float: none; margin-right: 30px; 
-			   padding: 6px 0; width: 120px;}
+.topmenu li li{clear: both; float: none; margin-right: 0px; 
+			   padding: 6px 0; width: 155px;}
 
 .pagetitle{font-size: 54px;}
 
 footer{padding:0px;}
+
+.container, 
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+    width: 977px;
+}
+
+footer {background: none repeat scroll 0 0 transparent;
+    	border-top: 1px dashed gray; width: 733px; margin-left: auto;
+    	margin-right: auto;}
 /**********************
  *  Debug dev options *
  **********************/
