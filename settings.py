@@ -161,6 +161,9 @@ BLOG_SLUG = "" # don't know what this does, but urls.py told me to do it
 ALLOWED_HOSTS = ["localhost",".thinkingmrseaves.com"] 
 
 
+RICHTEXT_FILTER_LEVEL = 2
+
+
 #############
 # DATABASES #
 #############
