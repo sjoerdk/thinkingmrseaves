@@ -160,7 +160,7 @@ BLOG_SLUG = "" # don't know what this does, but urls.py told me to do it
 # Django from bitching about it
 ALLOWED_HOSTS = ["localhost",".thinkingmrseaves.com"] 
 
-
+# Allow movies to be added in html editor
 RICHTEXT_FILTER_LEVEL = 2
 
 
