@@ -52,6 +52,11 @@ footer{padding:0px;}
 footer {background: none repeat scroll 0 0 transparent;
     	border-top: 1px dashed gray; width: 733px; margin-left: auto;
     	margin-right: auto;}
+
+/*Fix site horizontal skipping on page change, see github issue #5 */
+html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
+
+
 /**********************
  *  Debug dev options *
  **********************/
