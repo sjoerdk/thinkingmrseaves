@@ -36,8 +36,10 @@ a {color: #ff0000; text-decoration: none;
 
 .topmenu li{float:left;list-style-type: none;}
 .topmenu li li{clear: both; float: none; margin-right: 0px; 
-			   padding: 6px 0; width: 155px;}
+			   padding: 6px 0; width: 160px;}
+.topmenu ul{margin-left: 14px; margin-right: 0px;}
 
+.topmenu li.active{font-size: 15px; font-weight: bold;}
 .pagetitle{font-size: 54px;}
 
 footer{padding:0px;}
@@ -72,7 +74,6 @@ img{box-shadow: none;}
     margin: 0px;
     text-shadow: none;
 }
- 
 .btn {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
