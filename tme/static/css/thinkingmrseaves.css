@@ -58,6 +58,46 @@ html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
 
 img{box-shadow: none;}
 .featured-thumb {height: 120px; width: 120px;}
+.share-twitter,
+.share-facebook{background: none repeat scroll 0 0 #FFFFFF !important;}
+
+.share-twitter,
+.share-facebook,
+.share-twitter:hover,
+.share-facebook:hover {color: #616161;}
+
+.share-twitter, .share-facebook, .share-twitter:hover, .share-facebook:hover {
+    color: #616161;
+    font-weight: bold;
+    margin: 0px;
+    text-shadow: none;
+}
+ 
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: none;
+    border-image: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+}
 
 /**********************
  *  Debug dev options *
