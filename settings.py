@@ -163,6 +163,9 @@ ALLOWED_HOSTS = ["localhost",".thinkingmrseaves.com"]
 # Allow movies to be added in html editor
 RICHTEXT_FILTER_LEVEL = 2
 
+# use /articles/ in urls to denote blog posts
+BLOG_SLUG = "articles"
+
 
 #############
 # DATABASES #

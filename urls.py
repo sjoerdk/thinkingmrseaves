@@ -57,7 +57,7 @@ urlpatterns = patterns("",
 
     # Thinking Mrs. Eaves urls
     # ------------------------
-    url("^articles/", "mezzanine.blog.views.blog_post_list", name="articles"),
+    #url("^articles/", "mezzanine.blog.views.blog_post_list", name="articles"),
     url("^archive/", "mezzanine.blog.views.blog_post_list", name="archive"),
     
     # MEZZANINE'S URLS
