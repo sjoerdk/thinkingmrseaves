@@ -166,6 +166,8 @@ RICHTEXT_FILTER_LEVEL = 2
 # use /articles/ in urls to denote blog posts
 BLOG_SLUG = "articles"
 
+BLOG_USE_FEATURED_IMAGE = True
+
 
 #############
 # DATABASES #

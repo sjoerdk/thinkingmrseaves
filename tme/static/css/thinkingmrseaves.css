@@ -56,6 +56,11 @@ footer {background: none repeat scroll 0 0 transparent;
 /*Fix site horizontal skipping on page change, see github issue #5 */
 html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
 
+/**********************
+ *      Admin         *
+ **********************/
+/* fix weird indentation in blog category selection in admin*/
+.selector {width: 704px;} 
 
 /**********************
  *  Debug dev options *
