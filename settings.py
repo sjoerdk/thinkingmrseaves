@@ -168,6 +168,9 @@ BLOG_SLUG = "articles"
 
 BLOG_USE_FEATURED_IMAGE = True
 
+# Controls buttons and looks for the html editor in admin
+TINYMCE_SETUP_JS = "/static/grappelli/tinymce_setup/tinymce_setup_mrseaves.js"
+
 
 #############
 # DATABASES #
