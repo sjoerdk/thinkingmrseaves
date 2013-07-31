@@ -97,64 +97,71 @@
 
 </div>
 
-<div class="container top">
-	{% if settings.SITE_TITLE %}<a class="pagetitle" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-	<div class="searchbar">{% search_form %}</div>
+<div class = "container left">
+	<div id = "logo_upperleft">
+		<img src="{% static "images/logo_upperleft.PNG" %}">		
+	</div>
+	<div class="container sitemenu">
+	{% page_menu "pages/menus/topmenu.html" %}
+	</div>
+	
+	<div class="container left logo">
+		{% if settings.SITE_TITLE %}<span class = "pagetitle">{{ settings.SITE_TITLE }}</span>{% endif %}
+		<div class="searchbar">{% search_form %}</div>
+	</div>
 </div>
 
 
 
-<div class="container topmenu">
-{% page_menu "pages/menus/topmenu.html" %}
-</div>
-<div class="container">
-<div class="row">
+<div class="container middle">
+	<div class="row">
+	
+		<div class="span2 left debugremove">
+		    {% block left_panel %}
+		    <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
+		    {% endblock %}
+		</div>
+		
+		<div class="span7 middle">
+		    {% block main %}{% endblock %}
+		</div>
+		
+		<div class="span3 right">
+		    {% nevercache %}
+		    {% include "includes/user_panel.html" %}
+		    {% endnevercache %}
+		    <div class="panel">
+		    {% block right_panel %}
+		    {% ifinstalled mezzanine.twitter %}
+		    {% include "twitter/tweets.html" %}
+		    {% endifinstalled %}
+		    {% endblock %}
+		   	</div>
+		</div>
+	
+	</div>
 
-<div class="span2 left debugremove">
-    {% block left_panel %}
-    <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
-    {% endblock %}
-</div>
-
-<div class="span7 middle">
-    {% block main %}{% endblock %}
-</div>
-
-<div class="span3 right">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <div class="panel">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
-    </div>
-</div>
-
-</div>
-</div>
 
 <footer>
-<div class="container">
-<p>
-    {% trans "Powered by" %}
-    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-    {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    {% trans "Design by" %} <a href="">Lu Liang</a>
-    <span class="separator">|</span>
-    {% trans "Implementation by" %} <a href="">Sjoerd Kerkstra</a>
-    {% ifinstalled mezzanine.mobile %}
-    <span class="separator">|</span>
-    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-    {% endifinstalled %}
-</p>
-</div>
+	<div class="container">
+		<p>
+		    {% trans "Powered by" %}
+		    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
+		    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
+		    {% trans "and" %}
+		    <a href="http://www.djangoproject.com">Django</a>
+		    <span class="separator">|</span>
+		    {% trans "Design by" %} <a href="">Lu Liang</a>
+		    <span class="separator">|</span>
+		    {% trans "Implementation by" %} <a href="">Sjoerd Kerkstra</a>
+		    {% ifinstalled mezzanine.mobile %}
+		    <span class="separator">|</span>
+		    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
+		    {% endifinstalled %}
+		</p>
+	</div>
 </footer>
+</div>
 
 {% include "includes/footer_scripts.html" %}
 

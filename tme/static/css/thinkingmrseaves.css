@@ -1,6 +1,14 @@
 /**********************
  *      Main site     *
  **********************/
+
+.container.left{position:absolute;width:260px; margin-left: 13px;}
+#logo_upperleft img {}
+.container.middle{position:absolute; left:316px;}
+.container.left.logo{margin-top:50px;line-height: 57px;}
+.container.sitemenu{   margin-left: 32px; margin-top: 32px;}
+footer{padding:0px;}
+
 .panel {background:none; padding:10px 20px; margin-bottom:20px;
         line-height:170%; border:0px solid #eee; border-radius:0px;}
         
@@ -34,15 +42,16 @@ pre {
 a {color: #ff0000; text-decoration: none;
 }
 
-.topmenu li{float:left;list-style-type: none;}
-.topmenu li li{clear: both; float: none; margin-right: 0px; 
-			   padding: 6px 0; width: 160px;}
-.topmenu ul{margin-left: 14px; margin-right: 0px;}
+.sitemenu li {list-style-type: none; font-size:17px;}
+.sitemenu li li {clear: both; float: none; margin-right: 0px; 
+			     padding: 6px 0; width: 160px;}
+.sitemenu ul {margin-left: 14px; margin-right: 0px;margin-bottom: -2px;}
+.sitemenu li.active {font-weight: bold;}
+.pagetitle {font-size: 54px; color: #ff0000;}
 
-.topmenu li.active{font-size: 15px; font-weight: bold;}
-.pagetitle{font-size: 54px;}
+.sitemenu a {color:#333333;}
 
-footer{padding:0px;}
+
 
 .container, 
 .navbar-static-top .container,
@@ -52,8 +61,7 @@ footer{padding:0px;}
 }
 
 footer {background: none repeat scroll 0 0 transparent;
-    	border-top: 1px dashed gray; width: 733px; margin-left: auto;
-    	margin-right: auto;}
+    	border-top: 1px dashed gray; width: 733px;}
 
 /*Fix site horizontal skipping on page change, see github issue #5 */
 html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
