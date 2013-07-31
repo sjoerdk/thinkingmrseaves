@@ -97,6 +97,7 @@
 
 </div>
 
+<div class = "maincontent">
 <div class = "container left">
 	<div id = "logo_upperleft">
 		<img src="{% static "images/logo_upperleft.PNG" %}">		
@@ -140,10 +141,13 @@
 		</div>
 	
 	</div>
-
-
+	
+</div>
+</div>
 <footer>
+	<div style="clear:both"></div>
 	<div class="container">
+		
 		<p>
 		    {% trans "Powered by" %}
 		    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
@@ -160,9 +164,12 @@
 		    {% endifinstalled %}
 		</p>
 	</div>
-</footer>
+
 </div>
 
+
+
+</footer>
 {% include "includes/footer_scripts.html" %}
 
 </body>

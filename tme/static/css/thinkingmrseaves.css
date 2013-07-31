@@ -2,12 +2,15 @@
  *      Main site     *
  **********************/
 
-.container.left{position:absolute;width:260px; margin-left: 13px;}
+.maincontent{ width:900px;}
+.container.left{float:left;width:260px; margin-left: 13px;margin-right: 25px;}
 #logo_upperleft img {}
-.container.middle{position:absolute; left:316px;}
+.container.middle{float:left; width:400px;}
 .container.left.logo{margin-top:50px;line-height: 57px;}
 .container.sitemenu{   margin-left: 32px; margin-top: 32px;}
-footer{padding:0px;}
+footer{padding:0px; clear: both; background: none repeat scroll 0 0 transparent;
+    	border-top: 1px dashed gray; width: 733px; margin-left:auto; margin-right:auto;
+}
 
 .panel {background:none; padding:10px 20px; margin-bottom:20px;
         line-height:170%; border:0px solid #eee; border-radius:0px;}
@@ -60,8 +63,6 @@ a {color: #ff0000; text-decoration: none;
     width: 977px;
 }
 
-footer {background: none repeat scroll 0 0 transparent;
-    	border-top: 1px dashed gray; width: 733px;}
 
 /*Fix site horizontal skipping on page change, see github issue #5 */
 html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
