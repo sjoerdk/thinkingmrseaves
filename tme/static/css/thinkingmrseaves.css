@@ -3,7 +3,7 @@
  **********************/
 
 .maincontent{ width:900px;}
-.container.left{float:left;width:260px; margin-left: 13px;margin-right: 25px;}
+.container.left{float:left;width:260px; margin-left: 13px;margin-right: 40px;}
 #logo_upperleft img {}
 .container.middle{float:left; width:400px;}
 .container.left.logo{margin-top:50px;line-height: 57px;}
