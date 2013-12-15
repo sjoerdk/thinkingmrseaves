@@ -91,17 +91,18 @@
 <div class = "maincontent">
 <div class = "container left">
 	<div id = "logo_upperleft">
-		<img src="{% static "images/logo_upperleft.PNG" %}">		
+		<img src="{% static "images/logo_upperleft_2.PNG" %}">		
 	</div>
-	<div class="container sitemenu">
-	{% page_menu "pages/menus/topmenu.html" %}
-	</div>
-	
 	<div class="container left logo">
 		
 		{% if settings.SITE_TITLE %}<span class = "pagetitle">{{ settings.SITE_TITLE }}</span>{% endif %}
 		
 	</div>
+	<div class="container sitemenu">
+	{% page_menu "pages/menus/topmenu.html" %}
+	</div>
+	
+	
 </div>
 
 
