@@ -2,12 +2,22 @@
  *      Main site     *
  **********************/
 
+
+@font-face{
+		font-family: sanslike;
+		src: url("/static/css/monospace-821-bt.ttf") format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+body{font-family: sanslike;}
+
+
 .maincontent{ width:900px;}
 .container.left{float:left;width:260px; margin-left: 13px;margin-right: 40px;}
-#logo_upperleft img {}
 .container.middle{float:left; width:400px;}
 .container.left.logo{margin-top:50px;line-height: 57px;}
-.container.sitemenu{   margin-left: 32px; margin-top: 32px;}
+.container.sitemenu{margin-top: 32px;}
 footer{padding:0px; clear: both; background: none repeat scroll 0 0 transparent;
     	border-top: 1px dashed gray; width: 733px; margin-left:auto; margin-right:auto;
 }
@@ -45,14 +55,14 @@ pre {
 a {color: #ff0000; text-decoration: none;
 }
 
+.sitemenu a {color:#333333;}
 .sitemenu li {list-style-type: none; font-size:17px;}
 .sitemenu li li {clear: both; float: none; margin-right: 0px; 
 			     padding: 6px 0; width: 160px;}
-.sitemenu ul {margin-left: 14px; margin-right: 0px;margin-bottom: -2px;}
 .sitemenu li.active {font-weight: bold;}
+.sitemenu ul {margin-left: 9px; margin-right: 0px;margin-bottom: -2px;}
 .pagetitle {font-size: 54px; color: #ff0000;}
 
-.sitemenu a {color:#333333;}
 
 
 
@@ -96,25 +106,36 @@ img{box-shadow: none;}
     border-radius: 0px;
     border-width: 1px;
     height: 26px;
-    border-color:#676767;
+    font-family: sanslike;
+	font-size:17px;
     box-shadow: none;
     color: #333333;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
-    padding: 4px 12px;
+    padding: 1px 12px;
     text-align: center;
     text-shadow: none;
     vertical-align: middle;
 }
+/* Go button next to search bar*/
+.input-append input{
+	font-family: sanslike;
+	font-size:17px;
+}
+
+#logo_upperleft img{padding-left:17px;}
+
 
 /* Search bar style and position */ 
-.searchbar{float:right; padding:3px;}
+.searchbar{padding:3px; margin-left:3px; width:30px;}
+.searchbar .pull-right {float:none;}
 .container.top{line-height: 35px;}
-.navbar-search .search-query {border-radius: 0 0 0 0; width: 120px; 
-							  padding:1px;}
+.navbar-search .search-query {border-radius: 0 0 0 0; width: 160px; 
+							  padding:1px;font-family: sanslike;
+							  font-size:17px;}
+							  
 
 textarea, input[type="text"], input[type="password"], input[type="datetime"],
 input[type="datetime-local"], input[type="date"], input[type="month"],
@@ -122,7 +143,8 @@ input[type="time"], input[type="week"], input[type="number"],
 input[type="email"], input[type="url"], input[type="search"],
 input[type="tel"], input[type="color"], .uneditable-input {
     background-color: #FFFFFF;
-    border: #ffff00 3px solid;
+    border: none;
+    border-bottom: #333333 3px solid;
     box-shadow: none;
     transition: none;
     padding:4px;
@@ -140,10 +162,9 @@ input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
 input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, 
 input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
  input[type="color"]:focus, .uneditable-input:focus {
-    border: #FFFF00 solid 3px;
     box-shadow: none;
     outline: 0 none;
-    padding:1px;
+    border-bottom: #333333 3px solid;
 }
 
 

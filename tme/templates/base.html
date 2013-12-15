@@ -20,16 +20,7 @@
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-responsive.css" %}">
 <link rel="stylesheet" href="{% static "css/thinkingmrseaves.css" %}">
-<style>
-	@font-face{
-			font-family: sanslike;
-			src: url("{% static "css/monospace-821-bt.ttf" %}") format('truetype');
-			font-weight: normal;
-    		font-style: normal;
-		}
-		
-		body{font-family: sanslike;}
-</style>
+
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
 {% endif %}
@@ -107,8 +98,9 @@
 	</div>
 	
 	<div class="container left logo">
+		
 		{% if settings.SITE_TITLE %}<span class = "pagetitle">{{ settings.SITE_TITLE }}</span>{% endif %}
-		<div class="searchbar">{% search_form %}</div>
+		
 	</div>
 </div>
 
