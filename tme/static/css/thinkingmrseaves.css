@@ -177,6 +177,10 @@ input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
 .right img{padding-bottom:100px;}
 .red_dot{z-index:-1; position:absolute;}
 
+/*prev and next article buttons*/
+.pager li > a, .pager li > span{margin-right: -24px;}
+.share-facebook img {margin-bottom:39px;}
+
 /**********************
  *  Debug dev options *
  **********************/
